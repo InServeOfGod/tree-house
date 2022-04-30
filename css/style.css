@@ -1,0 +1,287 @@
+@charset "UTF-8";
+
+/*
+    vars
+*/
+
+:root {
+    --color-primary: #7cc576;
+    --color-secondary: #777777;
+    --color-third: #222222;
+}
+
+/*
+    fonts [montserrat, Roboto Slab]
+*/
+
+/*
+    tags
+*/
+
+a {
+    text-decoration: none;
+}
+
+footer svg {
+    fill: white;
+}
+
+footer h4 {
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 50px;
+}
+
+footer span, footer p {
+    font-size: 16px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+}
+
+footer p {
+    line-height: 22px;
+}
+
+/*
+    ids
+*/
+
+#logo {
+    color: #555555;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 41px;
+}
+
+#navbarSupportedContent {
+    font-size: 14px;
+    line-height: 41px;
+}
+
+#main-page-header {
+    background-image: url("../img/Background.png");
+    background-size: cover;
+    background-position: bottom;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    height: 530px;
+}
+
+#main-page-header h1 {
+    font-size: 60px;
+    letter-spacing: -3px;
+    line-height: 65px;
+}
+
+#main-page-header p {
+    font-size: 20px;
+    letter-spacing: 0;
+    color: #cccccc;
+}
+
+#main-page-header a {
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: 43px;
+    filter: drop-shadow(0px 1px 0.5px rgba(0,0,0,0.7));
+}
+
+#section-sea {
+    background-image: url("../img/Background2.png");
+    background-size: cover;
+    background-position: bottom;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+#section-sea h2 {
+    font-size: 40px;
+    letter-spacing: -2px;
+}
+
+#section-sea p {
+    width: 500px;
+    font-size: 16px;
+    letter-spacing: 0;
+}
+
+#section-sea li {
+    font-size: 16px;
+    letter-spacing: 0;
+}
+
+#section-sea a {
+    font-size: 15px;
+    letter-spacing: 0;
+    line-height: 43px;
+    filter: drop-shadow(0px 1px 0.5px rgba(0,0,0,0.7));
+}
+
+#gear-svg svg {
+    position: absolute;
+    left: 60%;
+    top: 15%;
+    fill: #fff;
+}
+
+#ipad {
+    position: absolute;
+    top: 5%;
+    right: -15%;
+}
+
+#container-services h5 {
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 75px;
+}
+
+#container-services p {
+    font-size: 14px;
+    letter-spacing: 0;
+}
+
+#container-framework h6 {
+    font-size: 18px;
+    letter-spacing: 0;
+}
+
+#container-framework p, #container-framework span, #container-framework a {
+    font-size: 16px;
+    letter-spacing: 0;
+}
+
+#section-culture h3 {
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 75px;
+}
+
+#section-culture p {
+    font-size: 14px;
+    letter-spacing: 0;
+}
+
+#container-customers p {
+    font-size: 22px;
+    line-height: 28px;
+}
+
+#container-customers span {
+    font-size: 18px;
+    line-height: 36px;
+}
+
+/*
+    classes
+*/
+
+.font-montserrat-700 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.font-montserrat-400 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.font-roboto-slab {
+    font-family: 'Roboto Slab', serif;
+}
+
+.fill-primary {
+    fill: var(--color-primary) !important
+}
+
+.color-primary {
+    color: var(--color-primary) !important
+}
+
+.bg-color-primary {
+    background-color: var(--color-primary) !important
+}
+
+.fill-secondary {
+    fill: var(--color-secondary) !important
+}
+
+.color-secondary {
+    color: var(--color-secondary) !important
+}
+
+.bg-color-secondary {
+    background-color: var(--color-secondary) !important
+}
+
+.fill-third {
+    fill: var(--color-third) !important
+}
+
+.color-third {
+    color: var(--color-third) !important
+}
+
+.bg-color-third {
+    background-color: var(--color-third) !important
+}
+
+.quotes {
+    width: 450px;
+}
+
+.width-75 {
+    width: 75%;
+}
+
+.section-title {
+    font-size: 40px;
+    letter-spacing: -2px;
+    line-height: 75px;
+}
+
+.section-subtitle {
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+/*
+    responsive
+*/
+
+@media screen and (max-width: 1440px) {
+    #ipad {
+        right: -25%;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    #ipad {
+        display: none;
+    }
+
+    .quotes {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #gear-svg {
+        display: none;
+    }
+
+    #section-sea p {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .width-75 {
+        width: auto;
+    }
+
+    #container-framework {
+        text-align: center;
+    }
+}
